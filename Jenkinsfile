@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Restore Packages') {
     steps {
-        bat 'nuget.exe restore test_repos.sln'
+        bat '.\\nuget.exe restore test_repos.sln'
     }
 }  
         stage('Build') {
